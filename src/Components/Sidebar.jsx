@@ -20,7 +20,7 @@ const Sidebar = ({ isOpen, onClose }) => {
     <aside
       className={`bg-gradient-to-tr from-slate-900 via-slate-800 to-slate-950 min-h-screen sm:hidden text-white w-[80%] fixed top-0 left-0 transform transition-transform duration-300 z-50 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
     >
-      <ul className="flex flex-col items-center gap-10 tracking-widest font-semibold uppercase pt-20 text-sm">
+      <ul className="flex flex-col items-center gap-10 tracking-widest font-semibold uppercase pt-28 text-sm">
         <li>
           <NavLink className={getLinkClass} to="/" onClick={handleLinkClick}>
             Home
@@ -49,14 +49,14 @@ const Sidebar = ({ isOpen, onClose }) => {
       </ul>
 
       <button
-        className="absolute top-5 right-5 text-xl border-2 text-red-500 border-red-500 hover:text-white hover:bg-red-500 rounded-md p-1 transition"
+        className="absolute top-8 right-5 text-xl border-2 text-red-500 border-red-500 hover:text-white hover:bg-red-500 rounded-md p-1 transition"
         onClick={onClose}
       >
         <IoCloseSharp />
       </button>
 
       <div className="flex justify-center">
-        <div className="text-color4 text-xl flex gap-3 md:gap-5 mt-2 absolute bottom-5">
+        <div className="text-color4 text-xl flex gap-3 md:gap-5 mt-2 absolute bottom-10">
           <a
             href="https://www.linkedin.com/in/hammad-khan1090/"
             className="social-icons"
