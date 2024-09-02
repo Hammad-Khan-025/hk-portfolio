@@ -18,7 +18,7 @@ input::-webkit-inner-spin-button {
     @apply transition-all ease-linear duration-300;
   }
   .list-items{
-    @apply hover:text-orange-500 text-sm 2xl:text-base transitions hover:ring-1 ring-orange-500 cursor-pointer rounded-lg px-2 py-1
+    @apply hover:text-orange-500 text-sm sm:text-base transitions cursor-pointer rounded-lg px-2 py-1
   }
   .input-field{
     @apply px-3 py-2 sm:py-3 md:px-4 w-[280px] sm:w-[250px] md:w-[220px] 2xl:w-[250px] 2xl:text-lg tracking-wider focus:outline-none bg-slate-900 shadow shadow-white placeholder-slate-600 rounded;

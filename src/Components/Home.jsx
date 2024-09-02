@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaFacebookF, FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 import Navbar from './Navbar';
 import bgImage from '../images/bg-heroo.PNG';
+import CV from '../images/Hammad-CV.pdf';
 
 const Home = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -22,7 +23,7 @@ const Home = () => {
     <Navbar/>
     <div className='flex flex-col items-center justify-center min-h-[calc(100vh-96px)] gap-5 text-center tracking-widest bg-opacity-20' >
       <h3 className="text-lg sm:text-xl xl:text-3xl 2xl:text-4xl text-white">Hello, Its me</h3>
-      <h1 className="text-4xl font-bold md:text-5xl lg:text-5xl 2xl:text-6xl text-orange-500 text-shadow-custom">Hammad Khan</h1>
+      <h1 className="text-4xl font-bold md:text-5xl lg:text-5xl 2xl:text-6xl text-orange-500 ">Hammad Khan</h1>
       <h3 className='text-2xl font-semibold md:text-4xl 2xl:text-5xl text-white'>
         {words[currentWordIndex]}
       </h3>
@@ -33,7 +34,7 @@ const Home = () => {
         <Link to="https://www.facebook.com/" className='social-icons' target='_blank'><FaFacebookF /></Link>
         <Link to="https://www.instagram.com/accounts/login/" className='social-icons' target='_blank'><FaInstagram /></Link>
       </div>
-      <button className="cv-btn">Download CV</button>
+      <a href={CV} className="cv-btn" download="Hammad-CV.pdf">Download CV</a>
     </div>
     </section>
   );

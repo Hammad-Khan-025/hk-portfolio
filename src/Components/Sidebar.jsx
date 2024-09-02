@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { IoCloseSharp } from "react-icons/io5";
 import {
   FaFacebookF,
@@ -8,29 +8,51 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, onClose }) => {
+  const getLinkClass = ({ isActive }) =>
+    `list-items ${isActive ? 'text-orange-500 ring-2 ring-orange-500' : ''}`;
+
+  const handleLinkClick = () => {
+    onClose(); // Trigger the sidebar closing animation
+  };
+
   return (
-    <aside className="bg-gradient-to-tr from-slate-900 via-slate-800 to-slate-950 min-h-screen sm:hidden text-white w-[80%] relative  translate-x-0 transition-all duration-1000">
+    <aside
+      className={`bg-gradient-to-tr from-slate-900 via-slate-800 to-slate-950 min-h-screen sm:hidden text-white w-[80%] fixed top-0 left-0 transform transition-transform duration-300 z-50 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
+    >
       <ul className="flex flex-col items-center gap-10 tracking-widest font-semibold uppercase pt-20 text-sm">
-        <li className="list-items">
-          <Link to="/">Home</Link>
+        <li>
+          <NavLink className={getLinkClass} to="/" onClick={handleLinkClick}>
+            Home
+          </NavLink>
         </li>
-        <li className="list-items">
-          <Link to="/about">About</Link>
+        <li>
+          <NavLink className={getLinkClass} to="/about" onClick={handleLinkClick}>
+            About
+          </NavLink>
         </li>
-        <li className="list-items">
-          <Link to="/skills">Skills</Link>
+        <li>
+          <NavLink className={getLinkClass} to="/skills" onClick={handleLinkClick}>
+            Skills
+          </NavLink>
         </li>
-        <li className="list-items">
-          <Link to="/portfolio">Portfolio</Link>
+        <li>
+          <NavLink className={getLinkClass} to="/portfolio" onClick={handleLinkClick}>
+            Portfolio
+          </NavLink>
         </li>
-        <li className="list-items">
-          <Link to="/contact">Contact</Link>
+        <li>
+          <NavLink className={getLinkClass} to="/contact" onClick={handleLinkClick}>
+            Contact
+          </NavLink>
         </li>
       </ul>
 
-      <button className="absolute top-5 right-5 text-2xl border-2 text-red-500 border-red-500 hover:text-white hover:bg-red-500 rounded-md p-1 transitions">
-        <IoCloseSharp className="" />
+      <button
+        className="absolute top-5 right-5 text-xl border-2 text-red-500 border-red-500 hover:text-white hover:bg-red-500 rounded-md p-1 transition"
+        onClick={onClose}
+      >
+        <IoCloseSharp />
       </button>
 
       <div className="flex justify-center">
