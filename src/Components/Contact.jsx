@@ -61,7 +61,7 @@ const Contact = () => {
           </div>
           <div>
             <h1 className="font-semibold text-xl sm:text-2xl 2xl:text-4xl uppercase mb-8 md:mb-10 text-center tracking-wider">
-              contact <span className="text-orange-500">me</span>
+              contact <span className="text-rootColor">me</span>
             </h1>
 
             <form className="flex flex-col flex-wrap items-center" onSubmit={handleSubmit}>

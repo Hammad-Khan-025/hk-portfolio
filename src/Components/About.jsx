@@ -19,7 +19,7 @@ const About = () => {
     <section style={{ backgroundImage: `url(${bgImage})`}}>
     <Navbar/>
     <div className="min-h-[calc(100vh-96px)] flex flex-col sm:flex-row-reverse gap-20 sm:gap-10 items-center justify-evenly  pb-10 px-5 pt-10 sm:pt-0">
-      <div className="rounded-full border-4 border-orange-500 overflow-hidden shadow-2xl shadow-orange-500 hover:shadow-none transitions">
+      <div className="rounded-full border-4 border-rootColor overflow-hidden shadow-2xl shadow-rootColor hover:shadow-none transitions">
         <img
           src={myImg}
           alt="Background"
@@ -32,7 +32,7 @@ const About = () => {
           About Me
         </h1>
         {/* Text Flip Animation for the "Web Developer" */}
-        <h3 className="font-medium text-xl lg:text-2xl 2xl:text-3xl mb-2 text-orange-500">
+        <h3 className="font-medium text-xl lg:text-2xl 2xl:text-3xl mb-2 text-rootColor">
           {words[currentWordIndex]}
         </h3>
         <p className="w-full sm:w-[400px] md:w-[350px] lg:w-[550px] md:leading-7 text-justify text-sm sm:text-base 2xl:text-xl text-gray-400 px-2 md:px-0">
@@ -43,7 +43,7 @@ const About = () => {
           ideas to life!
           <br />
           <br />
-          <span className="text-orange-500 font-bold uppercase ">
+          <span className="text-rootColor font-bold uppercase ">
             Skills:{" "}
           </span>
           HTML | CSS | Bootstrap | Tailwind CSS | Javascript | React JS |

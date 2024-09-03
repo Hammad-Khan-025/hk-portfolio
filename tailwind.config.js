@@ -6,9 +6,12 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        rootColor: 'var(--primary-color)', // Use the root color variable
+      },
       boxShadow: {
-        'custom-shadow': '0 0 20px rgba(249,115,22,1)', // Define your custom shadow
-      }
+        'custom-shadow': '0 0 10px var(--primary-color)', // Use rootColor for shadow
+      },
     },
   },
   plugins: [],

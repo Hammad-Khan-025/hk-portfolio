@@ -10,7 +10,7 @@ import {
 
 const Sidebar = ({ isOpen, onClose }) => {
   const getLinkClass = ({ isActive }) =>
-    `list-items ${isActive ? 'text-orange-500 ring-2 ring-orange-500' : ''}`;
+    `list-items ${isActive ? 'text-rootColor ring-2 ring-rootColor' : ''}`;
 
   const handleLinkClick = () => {
     onClose(); // Trigger the sidebar closing animation
@@ -49,14 +49,14 @@ const Sidebar = ({ isOpen, onClose }) => {
       </ul>
 
       <button
-        className="absolute top-8 right-5 text-xl border-2 text-red-500 border-red-500 hover:text-white hover:bg-red-500 rounded-md p-1 transition"
+        className="absolute top-8 right-5 text-xl border-2 border-red-500 bg-red-500 text-white hover:bg-red-700 hover:border-red-700 rounded-md p-1 transition"
         onClick={onClose}
       >
         <IoCloseSharp />
       </button>
 
       <div className="flex justify-center">
-        <div className="text-color4 text-xl flex gap-3 md:gap-5 mt-2 absolute bottom-10">
+        <div className="text-xl flex gap-3 md:gap-5 mt-2 absolute bottom-10">
           <a
             href="https://www.linkedin.com/in/hammad-khan1090/"
             className="social-icons"

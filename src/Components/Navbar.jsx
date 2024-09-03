@@ -12,14 +12,14 @@ const Navbar = () => {
   };
 
   const getLinkClass = ({ isActive }) =>
-    `list-items ${isActive ? 'text-orange-500 ring-2 ring-orange-500' : ''}`;
+    `list-items ${isActive ? 'text-rootColor ring-2 ring-rootColor' : ''}`;
 
   return (
     <>
       <nav className='h-24 text-white'>
         <div className='flex justify-between sm:justify-around items-center h-24 px-5 sm:px-0'>
           <NavLink to='/'>
-            <img src={logo} className='w-20 2xl:w-24' alt="Logo"/>
+            <img src={logo} className='w-20 2xl:w-24 hover:shadow-lg hover:shadow-rootColor transitions' alt="Logo"/>
           </NavLink>
           <button
             className='sm:hidden text-lg focus:ring-2 focus:ring-white rounded-lg p-2'

@@ -8,23 +8,30 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+:root {
+  --primary-color: #F97316; /* Define Tailwind's orange-500 as the root color */
+}
+
 .social-icons{
-    @apply border-2 border-orange-500 text-lg  w-10  h-10 2xl:w-14 2xl:h-14 2xl:text-2xl rounded-full flex justify-center items-center  hover:text-white  hover:bg-orange-500 bg-transparent text-orange-500 hover:shadow-xl hover:shadow-custom-shadow transitions;
+    @apply border-2 border-rootColor text-lg  w-10  h-10 2xl:w-14 2xl:h-14 2xl:text-2xl rounded-full flex justify-center items-center  hover:text-white  hover:bg-rootColor bg-transparent text-rootColor shadow-xl shadow-custom-shadow hover:shadow-none transitions;
   }
   .cv-btn{
-      @apply bg-transparent hover:text-orange-500 border-white border text-white hover:border-orange-500 active:bg-orange-500 font-bold py-2 md:py-3 px-3 md:px-4 mt-3 md:mt-0 rounded-full text-sm sm:text-base 2xl:text-lg shadow-md hover:shadow-orange-500 shadow-white tracking-widest transitions;
+      @apply bg-transparent hover:text-rootColor border-white border text-white hover:border-rootColor active:bg-rootColor font-bold py-2 md:py-3 px-3 md:px-4 mt-3 md:mt-0 rounded-full text-sm sm:text-base 2xl:text-lg shadow-md hover:shadow-rootColor shadow-white tracking-widest transitions;
   }
   .transitions{
     @apply transition-all ease-linear duration-300;
   }
   .list-items{
-    @apply hover:text-orange-500 text-sm sm:text-base transitions cursor-pointer rounded-lg px-2 py-1
+    @apply hover:text-rootColor text-sm sm:text-base transitions cursor-pointer rounded-lg px-2 py-1
   }
   .input-field{
     @apply px-3 py-2 sm:py-3 md:px-4 w-[280px] sm:w-[250px] md:w-[220px] 2xl:w-[250px] 2xl:text-lg tracking-wider focus:outline-none bg-slate-900 shadow shadow-white placeholder-slate-600 rounded;
 }
 .input-textarea{
     @apply w-[280px] sm:w-[512px] md:w-[452px] 2xl:w-[512px] h-32 md:h-40 2xl:h-48 2xl:text-lg tracking-wider focus:outline-none resize-none bg-slate-900 shadow shadow-white mt-3 mb-4 px-3 py-2 sm:py-3 md:px-4 placeholder-slate-600 rounded;
+}
+.skills-items{
+  @apply flex flex-col items-center justify-center tracking-wider font-bold border-2 rounded-lg w-[115px] sm:w-36 h-[115px] sm:h-36 hover:shadow-none transitions bg-slate-900 sm:bg-slate-950
 }
 
 

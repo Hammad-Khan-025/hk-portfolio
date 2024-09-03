@@ -13,7 +13,7 @@ const Portfolio = () => {
       <Navbar/>
       <div className='flex flex-col items-center gap-y-10 sm:gap-y-16 2xl:gap-y-20 justify-center min-h-[calc(100vh-96px)] py-10 px-5 tracking-widest'>
 
-      <h1 className='font-medium text-2xl md:text-3xl 2xl:text-4xl mb-2 text-white uppercase'>My <span className='text-orange-500'>Projects</span></h1>
+      <h1 className='font-medium text-2xl md:text-3xl 2xl:text-4xl mb-2 text-white uppercase'>My <span className='text-rootColor'>Projects</span></h1>
 
       <div className='flex flex-wrap justify-center gap-10 lg:gap-16'>
 

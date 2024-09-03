@@ -23,12 +23,12 @@ const Home = () => {
     <Navbar/>
     <div className='flex flex-col items-center justify-center min-h-[calc(100vh-96px)] gap-5 text-center tracking-widest bg-opacity-20' >
       <h3 className="text-lg sm:text-xl xl:text-3xl 2xl:text-4xl text-white">Hello, Its me</h3>
-      <h1 className="text-4xl font-bold md:text-5xl lg:text-5xl 2xl:text-6xl text-orange-500 ">Hammad Khan</h1>
+      <h1 className="text-4xl font-bold md:text-5xl lg:text-5xl 2xl:text-6xl text-rootColor ">Hammad Khan</h1>
       <h3 className='text-2xl font-semibold md:text-4xl 2xl:text-5xl text-white'>
         {words[currentWordIndex]}
       </h3>
 
-      <div className="text-color4 text-xl flex gap-3 md:gap-5 mt-2">
+      <div className="text-xl flex gap-3 md:gap-5 mt-2">
         <Link to="https://www.linkedin.com/in/hammad-khan1090/" className='social-icons' target='_blank'><FaLinkedinIn /></Link>
         <Link to="https://github.com/Hammad-Khan-025" className='social-icons' target='_blank'><FaGithub /></Link>
         <Link to="https://www.facebook.com/" className='social-icons' target='_blank'><FaFacebookF /></Link>
