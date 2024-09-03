@@ -19,30 +19,36 @@
   },
   {
     "id": "4",
+    "img": "../images/react-images/cartImg.PNG",
+    "title": "Cart Items",
+    "link": "https://cart2-eight.vercel.app/"
+  },
+  {
+    "id": "5",
     "img": "../images/react-images/reviewsImg.PNG",
     "title": "Reviews",
     "link": "https://hammad-khan-025.github.io/ReactReviews/"
   },
   {
-    "id": "5",
+    "id": "6",
     "img": "../images/react-images/passwordImg.PNG",
     "title": "Password Generator",
     "link": "https://hammad-khan-025.github.io/PasswordGenerator/"
   },
   {
-    "id": "6",
+    "id": "7",
     "img": "../images/react-images/birthdayImg.PNG",
     "title": "Birthday Reminder",
     "link": "https://hammad-khan-025.github.io/Birthdays/"
   },
   {
-    "id": "7",
+    "id": "8",
     "img": "../images/react-images/tabsImg.PNG",
     "title": "Tabs",
     "link": "https://hammad-khan-025.github.io/ReactTabs/"
   },
   {
-    "id": "8",
+    "id": "9",
     "img": "../images/react-images/modalImg.PNG",
     "title": "Modal + Sidebar",
     "link": "https://hammad-khan-025.github.io/Modal/"
