@@ -3,54 +3,54 @@
     "id": "1",
     "title": "Projects Dashboard",
     "link": "https://dashboard-khaki-nu.vercel.app/",
-    "img": "/public/project-images/projectsImg.PNG"
+    "img": "/project-images/projectsImg.PNG"
   },
   {
     "id": "2",
     "title": "Tic Tac Toe Game",
     "link": "https://tic-tac-toe-cyan-zeta-64.vercel.app/",
-    "img": "/public/project-images/ticTacImg.PNG"
+    "img": "/project-images/ticTacImg.PNG"
   },
   {
     "id": "3",
     "title": "RealTime Database",
     "link": "https://realtime-db-ten.vercel.app/",
-    "img": "/public/project-images/databaseImg.PNG"
+    "img": "/project-images/databaseImg.PNG"
   },
   {
     "id": "4",
     "title": "Todo App",
     "link": "https://hammad-khan-025.github.io/TodoApp/",
-    "img": "/public/project-images/todoImg.PNG"
+    "img": "/project-images/todoImg.PNG"
   },
   {
     "id": "5",
     "title": "Investment Calculator",
     "link": "https://investment-calc-psi.vercel.app/",
-    "img": "/public/project-images/InvestmentImg.PNG"
+    "img": "/project-images/InvestmentImg.PNG"
   },
   {
     "id": "6",
     "title": "Currency App",
     "link": "https://hammad-khan-025.github.io/CurrencyApp/",
-    "img": "/public/project-images/currencyImg.PNG"
+    "img": "/project-images/currencyImg.PNG"
   },
   {
     "id": "7",
     "title": "Cart Items",
     "link": "https://cart2-eight.vercel.app/",
-    "img": "/public/project-images/cartImg.PNG"
+    "img": "/project-images/cartImg.PNG"
   },
   {
     "id": "8",
     "title": "Reviews",
     "link": "https://hammad-khan-025.github.io/ReactReviews/",
-    "img": "/public/project-images/reviewsImg.PNG"
+    "img": "/project-images/reviewsImg.PNG"
   },
   {
     "id": "9",
     "title": "Password Generator",
     "link": "https://hammad-khan-025.github.io/PasswordGenerator/",
-    "img": "/public/project-images/passwordImg.PNG"
+    "img": "/project-images/passwordImg.PNG"
   }
 ]
