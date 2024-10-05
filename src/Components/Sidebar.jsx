@@ -56,8 +56,8 @@ const Sidebar = ({ isOpen, onClose }) => {
           </NavLink>
         </li>
         <li>
-          <NavLink className={getLinkClass} to="/portfolio" onClick={handleLinkClick}>
-            Portfolio
+          <NavLink className={getLinkClass} to="/projects" onClick={handleLinkClick}>
+            Projects
           </NavLink>
         </li>
         <li>
