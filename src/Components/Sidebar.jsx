@@ -4,7 +4,6 @@ import { IoCloseSharp } from "react-icons/io5";
 import { FaFacebookF, FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 
 const Sidebar = ({ isOpen, onClose }) => {
-  const sidebarRef = useRef(null);
 
   const getLinkClass = ({ isActive }) =>
     `list-items ${isActive ? 'text-rootColor ring-2 ring-rootColor' : ''}`;
@@ -13,29 +12,9 @@ const Sidebar = ({ isOpen, onClose }) => {
     onClose(); // Trigger the sidebar closing animation
   };
 
-  // Close sidebar when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
-        onClose();
-      }
-    };
-
-    if (isOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-    } else {
-      document.removeEventListener("mousedown", handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [isOpen, onClose]);
-
   return (
     <aside
-      ref={sidebarRef}
-      className={`bg-gradient-to-tr from-slate-900 via-slate-800 to-slate-950 min-h-screen sm:hidden text-white w-[80%] fixed top-0 left-0 transform transition-transform duration-300 z-50 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
+      className={`bg-gradient-to-tr from-slate-950 via-slate-900 to-slate-950 min-h-screen sm:hidden text-white w-[80%] fixed top-0 left-0 transform transition-transform duration-300 z-50 rounded-r-xl  ${isOpen ? 'translate-x-0 ' : '-translate-x-full'}`}
     >
       {/* Sidebar content */}
       <ul className="flex flex-col items-center gap-10 tracking-widest font-semibold uppercase pt-28 text-sm">

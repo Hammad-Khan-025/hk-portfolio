@@ -56,6 +56,8 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
+
+      {isSidebarOpen && <div className='fixed top-0 w-full min-h-screen bg-slate-400 bg-opacity-30' onClick={toggleSidebar}></div>}
       <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />
     </>
   );
