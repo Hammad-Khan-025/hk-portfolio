@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaFacebookF, FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 import Navbar from './Navbar';
 import bgImage from '../images/bg-heroo.PNG';
-import CV from '../images/Hammad-CV.pdf';
+import CV from '../images/Hammad_CV.pdf';
 
 const Home = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
