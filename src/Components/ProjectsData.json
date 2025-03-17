@@ -13,42 +13,60 @@
   },
   {
     "id": "3",
+    "title": "Ecommerce Website",
+    "link": "https://hammad-khan-025.github.io/E-commerce/",
+    "img": "/project-images/ecommerceimage.PNG"
+  },
+  {
+    "id": "4",
+    "title": "Therapy Nails Spa",
+    "link": "https://hammad-khan-025.github.io/TherapyNails/public/",
+    "img": "/project-images/therapyImage.PNG"
+  },
+  {
+    "id": "5",
     "title": "RealTime Database",
     "link": "https://realtime-db-ten.vercel.app/",
     "img": "/project-images/databaseImg.PNG"
   },
   {
-    "id": "4",
+    "id": "6",
     "title": "Todo App",
     "link": "https://hammad-khan-025.github.io/TodoApp/",
     "img": "/project-images/todoImg.PNG"
   },
   {
-    "id": "5",
+    "id": "7",
     "title": "Investment Calculator",
     "link": "https://investment-calc-psi.vercel.app/",
     "img": "/project-images/InvestmentImg.PNG"
   },
   {
-    "id": "6",
+    "id": "8",
     "title": "Currency App",
     "link": "https://hammad-khan-025.github.io/CurrencyApp/",
     "img": "/project-images/currencyImg.PNG"
   },
   {
-    "id": "7",
+    "id": "9",
+    "title": "Landing page Bootstrap",
+    "link": "https://hammad-khan-025.github.io/Landing/Landing.html",
+    "img": "/project-images/landingimage2.PNG"
+  },
+  {
+    "id": "10",
+    "title": "Landing page Tailwind",
+    "link": "https://hammad-khan-025.github.io/Tailwind-Landing/",
+    "img": "/project-images/landingimage1.PNG"
+  },
+  {
+    "id": "11",
     "title": "Cart Items",
     "link": "https://cart2-eight.vercel.app/",
     "img": "/project-images/cartImg.PNG"
   },
   {
-    "id": "8",
-    "title": "Reviews",
-    "link": "https://hammad-khan-025.github.io/ReactReviews/",
-    "img": "/project-images/reviewsImg.PNG"
-  },
-  {
-    "id": "9",
+    "id": "12",
     "title": "Password Generator",
     "link": "https://hammad-khan-025.github.io/PasswordGenerator/",
     "img": "/project-images/passwordImg.PNG"
