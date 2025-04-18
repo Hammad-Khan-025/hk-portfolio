@@ -15,7 +15,7 @@ const Skills = () => {
   return (
     <section
       style={{ backgroundImage: `url(${bgImage})` }}
-      className="bg-repeat"
+      className="bg-no-repeat bg-cover"
     >
       <Navbar />
       <div className="min-h-[calc(100vh-96px)] flex flex-col flex-wrap gap-10 2xl:gap-20  md:px-20 justify-center items-center pb-10 pt-10">

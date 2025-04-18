@@ -5,6 +5,9 @@ import bgImage from "../images/bg-hero.PNG";
 import data from './ProjectsData.json';
 
 const Projects = () => {
+  // Create a reversed copy of the data array
+  const reversedData = [...data].reverse();
+
   return (
     <section
       className="min-h-screen"
@@ -17,12 +20,12 @@ const Projects = () => {
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-12">
-          {data.map((item) => {
-            const { id, title, link, img } = item; // Now you can use the 'image' field
+          {reversedData.map((item, index) => {
+            const { title, link, img } = item;
 
             return (
               <Link
-                key={id}
+                key={index}
                 to={link}
                 target="_blank"
                 className="rounded-lg overflow-hidden hover:shadow-xl hover:shadow-rootColor hover:scale-105 transitions"
